@@ -2,7 +2,7 @@ import * as React from "react";
 
 import * as apiClient from "../apiClient";
 
-import styles from "./styles.module.scss";
+// import styles from "./styles.module.scss";
 
 const Tasks = () => {
   const [tasks, setTasks] = React.useState([]);
@@ -23,7 +23,7 @@ const Tasks = () => {
 };
 
 const TaskList = ({ tasks }) => (
-  <ul className={styles.list}>
+  <ul>
     {tasks.map(({ id, name }) => (
       <li key={id}>{name}</li>
     ))}
@@ -49,9 +49,7 @@ const AddTask = ({ addTask }) => {
         New task:{" "}
         <input onChange={(e) => setTask(e.currentTarget.value)} value={task} />
       </label>
-      <button disabled={!canAdd} className={styles.button}>
-        Add
-      </button>
+      <button disabled={!canAdd}>Add</button>
     </form>
   );
 };

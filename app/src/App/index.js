@@ -3,13 +3,14 @@ import * as React from "react";
 import { Routes, Route, NavLink } from "react-router-dom";
 
 import Tasks from "../Tasks";
+import Summary from "../components/Summary";
 
-import styles from "./styles.module.scss";
+// import styles from "./styles.module.scss";
 
 const App = () => (
   <>
     <header>
-      <nav className={styles.nav}>
+      <nav>
         <NavLink to="/" end>
           Home
         </NavLink>{" "}
@@ -22,12 +23,13 @@ const App = () => (
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </main>
+    <Summary />
   </>
 );
-
+//grids go in home
 const Home = () => (
   <>
-    <header className={styles.header}>
+    <header>
       <h1>{process.env.REACT_APP_TITLE}</h1>
       <p>{process.env.REACT_APP_SUBTITLE}</p>
     </header>
@@ -35,6 +37,7 @@ const Home = () => (
   </>
 );
 
+//put grid here too
 const Dashboard = () => (
   <>
     <h1>Dashboard</h1>
