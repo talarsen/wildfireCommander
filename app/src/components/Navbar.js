@@ -5,7 +5,14 @@ function Navbar() {
   return (
     <div className="Navbar">
       <div className="leftSide">
-        <a href="/critical-resource-needs">Choose Fire</a>
+        <a href="/" class="dropbtn">
+          Dropdown
+        </a>
+        <div class="dropdown-content">
+          <a href="/fire1">Link 1</a>
+          <a href="/fire2">Link 2</a>
+          <a href="/fire3">Link 3</a>
+        </div>
       </div>
       <div className="rightSide">
         <a href="/critical-resource-needs">Critical Resource Needs</a>

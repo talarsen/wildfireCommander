@@ -1,26 +1,30 @@
-import * as React from "react";
+import React, { useState } from "react";
 
 import { Routes, Route } from "react-router-dom";
 
-import ProminentAppBar from "../components/Header";
-import Navbar from "../components/Navbar";
+import Header2 from "../components/Header2";
+
+// import ProminentAppBar from "../components/Header";
+// import Navbar from "../components/Navbar";
 // import Tasks from "../Tasks";
 // import styles from "./styles.module.scss";
 
-const App = () => (
-  <>
-    <header>
-      <ProminentAppBar />{" "}
-    </header>
-    <Navbar />
-    <main>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-      </Routes>
-    </main>
-  </>
-);
+const App = () => {
+  return (
+    <>
+      <header>
+        <Header2 />
+      </header>
+      <h1>Choose a fire.</h1>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+        </Routes>
+      </main>
+    </>
+  );
+};
 //grids go in home
 const Home = () => (
   <>
