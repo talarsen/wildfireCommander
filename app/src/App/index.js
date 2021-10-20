@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -16,12 +16,16 @@ const App = () => {
   const myStyle = {
     marginBottom: "25px",
   };
+
+  const [incidentNumber, setIncidentNumber] = useState(null);
+
   return (
     <>
       <header style={myStyle}>
         <Header2 />
       </header>
-      <ChooseFire />
+      <ChooseFire setIncidentNumber={setIncidentNumber} />
+      {incidentNumber}
       <main>
         <Routes>
           <Route path="/" element={<Home />} />

@@ -1,7 +1,12 @@
-import React from "react";
+import * as React from "react";
 
-import { Map } from "@esri/react-arcgis";
-
-export default (props) => (
-  <Map class="full-screen-map" mapProperties={{ basemap: "satellite" }} />
-);
+import ScrollingNavBar from "./ScrollingNavBar";
+const Fire = () => {
+  return (
+    <>
+      <ScrollingNavBar />
+      <div>Hello</div>
+    </>
+  );
+};
+export default Fire;
