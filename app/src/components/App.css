@@ -3,40 +3,7 @@ html, body {
   padding: 0;
   font-family:Arial, Helvetica, sans-serif;
 }
-
-.Navbar {
-  display: flex;
-  background-color: #000;
-  width: 100%;
-  height: 80px;
-  font-family: Oswald;
-
-}
-.Navbar .leftSide {
-  flex: 50%;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-}
-.Navbar .rightSide {
-  flex: 50%;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-}
-
-.Navbar .rightSide .links {
-  max-height: 80px;
-}
-
- a {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-  margin-left: 15px;
-
-}
-
+/* Wildfire Commander Header2  */
 .header {
   display: flex;
   justify-content: center;
@@ -65,3 +32,5 @@ html, body {
     font-size: 32px;
   }
 }
+
+/* ChooseFire DropDown  */
