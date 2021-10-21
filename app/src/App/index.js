@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import ChooseFire from "../components/ChooseFire";
 import Header2 from "../components/Header2";
 import IncidentMap from "../components/IncidentMap";
-
+import WeatherCard from "../components/WeatherCard";
 // import ProminentAppBar from "../components/Header";
 // import Navbar from "../components/Navbar";
 // import Tasks from "../Tasks";
@@ -27,6 +27,15 @@ const App = () => {
       </header>
       <ChooseFire setIncidentNumber={setIncidentNumber} />
       <IncidentMap />
+      <container className="App">
+        <WeatherCard
+          dt={1602104400 * 1000}
+          temp_min="22.67"
+          temp_max="24.39"
+          main="Clear"
+          icon="01d"
+        />
+      </container>
       {incidentNumber}
       <main>
         <Routes>
