@@ -6,6 +6,7 @@ import "../components/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ChooseFire from "../components/ChooseFire";
 import Header2 from "../components/Header2";
+import IncidentMap from "../components/IncidentMap";
 
 // import ProminentAppBar from "../components/Header";
 // import Navbar from "../components/Navbar";
@@ -25,6 +26,7 @@ const App = () => {
         <Header2 />
       </header>
       <ChooseFire setIncidentNumber={setIncidentNumber} />
+      <IncidentMap />
       {incidentNumber}
       <main>
         <Routes>
